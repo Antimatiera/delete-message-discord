@@ -1,6 +1,6 @@
 // Turn on Developer Mode under User Settings > Appearance > Developer Mode (at the bottom)
 // Then open the channel you wish to delete all of the messages (could be a DM) and click the three dots on the far right.
-// Click "Copy ID" and paste that instead of LAST_MESSAGE_ID.
+// Click "Copy ID" and paste that instead of 702559110989742110.
 // Copy / paste the below script into the JavaScript console.
 // If you're in a DM you will receive a 403 error for every message the other user sent (you don't have permission to delete their messages).
 
@@ -8,7 +8,7 @@ var before = 'LAST_MESSAGE_ID';
 clearMessages = function(){
 	const channel = window.location.href.split('/').pop();
 	const baseURL = `https://discordapp.com/api/channels/${channel}/messages`;
-	const headers = {"Authorization": "YOUR TOKEN HIER" };
+	const headers = {"Authorization": "Mjk3NDE2MzUwMTUyNzg1OTI1.XqLH0A.1cnArTURj0uOBjSO0O30uCjudUw" };
 
 	let clock = 0;
 	let interval = 500;
